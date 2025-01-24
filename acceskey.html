@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Flash USDT Sender – Fast & Secure USDT Transfers. Get the APK with instant transfers, low fees, and cross-chain support. Try it now!">
+    <meta name="keywords" content="USDT, Flash USDT Sender, Crypto, Fast Transfer, Low Fees, Cross-Chain Support, APK">
+    <meta name="author" content="Flash USDT Sender Team">
+    <meta property="og:image" content="https://github.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/raw/refs/heads/main/IMG_0208.jpeg">
+    <meta property="og:title" content="Flash USDT Sender – Fast & Secure Transfers">
+    <meta property="og:description" content="Instant USDT Transfers. Low Fees. Cross-Chain Support. Try Flash USDT Sender now!">
+    <title>Flash USDT Sender – Fast & Secure Transfers</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0192.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0096.jpeg') center/cover no-repeat;
+            backdrop-filter: blur(10px);
+            opacity: 0.7;
+            color: white;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            opacity: 1;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 2px solid #FF4500;
+            color: #fff;
+            background-color: #333;
+        }
+        button {
+            background-color: #FF4500;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: #e03e00;
+        }
+        .key-section {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FF4500;
+        }
+        .locked {
+            color: #aaa;
+            font-style: italic;
+        }
+        .key-section.unlocked {
+            color: #00ff00;
+            font-style: normal;
+        }
+        .seo-banner {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .product-image {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 **Flash USDT Sender** – Fast & Secure USDT Transfers! 🚀</h1>
+        <p>
+            🔹 Instant Transfers<br>
+            🔹 Low Fees<br>
+            🔹 Cross-Chain Support
+        </p>
+
+        <p>Try it now: <a href="https://flashusdtsendersoftware.vercel.app" style="color: #FF4500; text-decoration: none;">Flash USDT Sender</a></p>
+
+        <p>
+            ⏳ **Don’t Miss Out!** ⏳<br>
+            We’re coming soon to major app stores! Be part of <strong>scripters.store</strong> and meet our alpha on <strong>@RecentCoders</strong>.<br>
+            💥 **Join us now and get:**<br>
+            🔥 **85% Off** on the store<br>
+            💎 **Access to EVERYTHING!**<br>
+            Be a loyal member today! 🌟
+        </p>
+
+        <!-- User Email Form -->
+        <div class="form-container">
+            <input type="email" id="userEmail" placeholder="Enter your email to proceed" required>
+            <button onclick="showPayment()">Proceed to Payment</button>
+        </div>
+
+        <!-- Atlos Payment Button -->
+        <div class="payment-btn-container">
+            <button id="paymentBtn" onclick="atlos.Pay({
+                merchantId: 'VJ30UOFJMO',
+                orderId: '1', 
+                orderAmount: 200})" style="display:none;">
+                Access Key
+            </button>
+        </div>
+
+        <!-- Key Section (Hidden until payment is done) -->
+        <div class="key-section locked" id="keySection">
+            <span>🔒</span> **Locked Content**: Key: <span id="key">likhonsheikh</span>
+        </div>
+
+        <!-- SEO Meta Banner -->
+        <img src="https://github.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/raw/refs/heads/main/IMG_0208.jpeg" alt="Flash USDT Sender Banner" class="seo-banner">
+
+        <!-- Product Graphics -->
+        <img src="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/Copy%20of%20Green%20Modern%20Futuristic%20Artificial%20Intelligence%20Presentation.jpeg" alt="Flash USDT Sender Product" class="product-image">
+
+        <!-- Atlos Payment Widget Script -->
+        <script async src="https://atlos.io/packages/app/atlos.js"></script>
+
+        <script>
+            // Show payment button and hide email form after entering email
+            function showPayment() {
+                const emailInput = document.getElementById('userEmail').value;
+                if (emailInput) {
+                    document.querySelector('.form-container').style.display = 'none';
+                    document.getElementById('paymentBtn').style.display = 'block';
+                } else {
+                    alert("Please enter a valid email to proceed.");
+                }
+            }
+
+            // Handle successful payment
+            atlos.onPaymentSuccess = function () {
+                const keySection = document.getElementById('keySection');
+                keySection.classList.remove('locked');
+                keySection.classList.add('unlocked');
+            };
+        </script>
+    </div>
+</body>
+</html>
