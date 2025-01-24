@@ -4,225 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Flash USDT Sender – Fast & Secure USDT Transfers. Check the latest transactions for a smooth experience.">
-    <meta name="keywords" content="USDT, Flash USDT Sender, Crypto, Fast Transfer, Low Fees, Cross-Chain Support, Transactions, Etherscan, API">
+    <meta name="description" content="Flash USDT Sender – Fast & Secure USDT Transfers. Access the latest live transactions.">
+    <meta name="keywords" content="USDT, Flash USDT Sender, Crypto, Secure Transactions, Ethereum, Etherscan, Payments">
     <meta name="author" content="Flash USDT Sender Team">
     <meta property="og:image" content="https://github.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/raw/refs/heads/main/IMG_0208.jpeg">
-    <meta property="og:title" content="Flash USDT Sender – Fast & Secure Transfers">
-    <meta property="og:description" content="Track the latest transactions for Flash USDT Sender. Fast, low fees, and secure transfers.">
+    <meta property="og:title" content="Flash USDT Sender – Secure Crypto Transfers">
+    <meta property="og:description" content="Track live USDT transactions with Flash USDT Sender. Fast, secure, and ultra-modern platform.">
     <meta name="robots" content="index, follow">
-    <title>Flash USDT Sender – Fast & Secure Transfers</title>
+    <title>Flash USDT Sender – Secure Crypto Transfers</title>
     <link rel="icon" href="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0192.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: 'Roboto', sans-serif;
+            min-height: 100vh;
+            background: url('https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0096.jpeg') center/cover no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            background: url('https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0096.jpeg') center/cover no-repeat;
-            backdrop-filter: blur(10px);
-            opacity: 0.7;
-            color: white;
-            flex-direction: column;
+            color: #ffffff;
+            text-align: center;
             padding: 20px;
         }
+
         .container {
-            background-color: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.8);
             border-radius: 15px;
+            max-width: 600px;
             width: 100%;
-            max-width: 1200px;
             padding: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            position: relative;
-            opacity: 1;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 1.5s ease;
         }
+
         h1 {
             font-size: 2.5rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
+
         p {
             font-size: 1.2rem;
+            margin-bottom: 25px;
+        }
+
+        form {
             margin-bottom: 20px;
         }
+
+        input {
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: none;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: linear-gradient(90deg, #FF4500, #FF6347);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
         .loader-bar {
             width: 100%;
             height: 4px;
             background-color: #333;
-            margin-top: 20px;
+            margin-bottom: 25px;
+            overflow: hidden;
         }
+
         .loader {
             height: 100%;
             width: 0;
-            background-color: #FF4500;
-            animation: load 2s ease-out forwards;
+            background: linear-gradient(90deg, #FFD700, #FF4500);
+            animation: load 2s ease-out infinite;
         }
+
         @keyframes load {
             0% { width: 0; }
             100% { width: 100%; }
         }
+
         .transaction-container {
             margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
         }
+
         .transaction-card {
-            background: rgba(255, 69, 0, 0.8);
-            padding: 15px;
+            background: rgba(255, 69, 0, 0.85);
+            padding: 10px 15px;
             border-radius: 10px;
+            margin-bottom: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             animation: fadeIn 1s ease-out;
-            transition: background-color 0.3s ease;
         }
-        .transaction-card:hover {
-            cursor: pointer;
-            background-color: #e03e00;
-        }
+
         .transaction-info {
             color: #fff;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
-        .txid {
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: #fff;
+
+        .transaction-info a {
             text-decoration: none;
-        }
-        .transaction-info span {
-            font-weight: bold;
             color: #FFD700;
         }
+
         @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(30px); }
+            0% { opacity: 0; transform: translateY(20px); }
             100% { opacity: 1; transform: translateY(0); }
         }
-        .seo-banner {
-            width: 100%;
-            margin-top: 20px;
-        }
-        .product-image {
-            margin-top: 30px;
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-        .glossary {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .glossary-item {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            border-radius: 8px;
-            color: #fff;
-            font-size: 1rem;
-            transition: background-color 0.3s ease;
-        }
-        .glossary-item:hover {
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-        .glossary-item h3 {
-            margin-bottom: 5px;
-        }
-        .glossary-item p {
-            font-size: 0.9rem;
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🚀 **Flash USDT Sender** – Fast & Secure USDT Transfers! 🚀</h1>
-        <p>
-            🔹 Instant Transfers<br>
-            🔹 Low Fees<br>
-            🔹 Cross-Chain Support
-        </p>
+        <h1>🚀 Flash USDT Sender</h1>
+        <p>🔹 Secure Transactions<br>🔹 Cross-Chain Support<br>🔹 Instant Payments</p>
+        
+        <form id="emailForm">
+            <input type="email" id="userEmail" placeholder="Enter your email" required>
+            <button type="button" onclick="proceedPayment()">Proceed to Payment</button>
+        </form>
+
         <div class="loader-bar">
             <div class="loader"></div>
         </div>
 
-        <!-- Display latest transactions -->
         <div class="transaction-container" id="transactionContainer">
-            <!-- Latest transactions will be loaded here -->
+            <!-- Transactions will load dynamically -->
         </div>
-
-        <p>Try it now: <a href="https://flashusdtsendersoftware.vercel.app" style="color: #FF4500; text-decoration: none;">Flash USDT Sender</a></p>
-
-        <img src="https://github.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/raw/refs/heads/main/IMG_0208.jpeg" alt="Flash USDT Sender Banner" class="seo-banner">
-
-        <img src="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/Copy%20of%20Green%20Modern%20Futuristic%20Artificial%20Intelligence%20Presentation.jpeg" alt="Flash USDT Sender Product" class="product-image">
-
-        <div class="glossary">
-            <div class="glossary-item">
-                <h3>Instant Transfers</h3>
-                <p>Experience lightning-fast USDT transfers with our cutting-edge technology.</p>
-            </div>
-            <div class="glossary-item">
-                <h3>Low Fees</h3>
-                <p>Enjoy minimal transaction fees, making your transfers cost-effective.</p>
-            </div>
-            <div class="glossary-item">
-                <h3>Cross-Chain Support</h3>
-                <p>Seamlessly transfer USDT across different blockchains with ease.</p>
-            </div>
-        </div>
-
-        <script>
-            const apiKey = 'MM2A4V75UZ2DSWR28EUM5EEVR8IB4Y1UMC'; // Your Etherscan API Key
-            const address = '0xYourEthereumAddress'; // Replace with your Ethereum address
-            const apiUrl = `https://api.etherscan.io/api?module=account&action=txlist&address=${address}&apikey=${apiKey}`;
-
-            // Fetch transaction data
-            async function fetchTransactions() {
-                try {
-                    const response = await fetch(apiUrl);
-                    const data = await response.json();
-                    if (data.status === '1') {
-                        displayTransactions(data.result);
-                    }
-                } catch (error) {
-                    console.error('Error fetching transactions:', error);
-                }
-            }
-
-            // Display transactions dynamically
-            function displayTransactions(transactions) {
-                const container = document.getElementById('transactionContainer');
-                transactions.slice(0, 5).forEach(transaction => {
-                    if (transaction.value >= 200 * 1e18) { // Check for $200 (in Wei)
-                        const transactionCard = document.createElement('div');
-                        transactionCard.classList.add('transaction-card');
-                        transactionCard.innerHTML = `
-                            <div class="transaction-info">
-                                <span>TxID:</span>
-                                <a href="https://etherscan.io/tx/${transaction.hash}" class="txid" target="_blank">${transaction.hash}</a>
-                            </div>
-                            <div class="transaction-info">
-                                Amount: <span>${transaction.value / 1e18} ETH</span>
-                            </div>
-                        `;
-                        container.appendChild(transactionCard);
-                    }
-                });
-            }
-
-            // Start fetching transactions after loading
-            window.onload = fetchTransactions;
-        </script>
     </div>
+
+    <script async src="https://atlos.io/packages/app/atlos.js"></script>
+    <script>
+        const apiKey = 'MM2A4V75UZ2DSWR28EUM5EEVR8IB4Y1UMC';
+        const apiUrl = `https://api.etherscan.io/api?module=account&action=txlist&address=0xYourAddress&apikey=${apiKey}`;
+
+        // Load transactions
+        async function fetchTransactions() {
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                const container = document.getElementById("transactionContainer");
+                if (data.status === "1") {
+                    data.result.slice(0, 5).forEach(tx => {
+                        const div = document.createElement("div");
+                        div.className = "transaction-card";
+                        div.innerHTML = `
+                            <div class="transaction-info">
+                                <strong>Tx:</strong> 
+                                <a href="https://etherscan.io/tx/${tx.hash}" target="_blank">${tx.hash.slice(0, 12)}...</a>
+                            </div>
+                            <div class="transaction-info">
+                                <strong>Value:</strong> ${(tx.value / 1e18).toFixed(4)} ETH
+                            </div>`;
+                        container.appendChild(div);
+                    });
+                } else {
+                    console.log("No transactions found.");
+                }
+            } catch (error) {
+                console.error("Error fetching transactions:", error);
+            }
+        }
+
+        fetchTransactions();
+
+        // Payment process
+        function proceedPayment() {
+            const email = document.getElementById("userEmail").value;
+            if (!email) {
+                alert("Please enter a valid email.");
+                return;
+            }
+
+            atlos.Pay({
+                merchantId: 'VJ30UOFJMO',
+                orderId: '1',
+                orderAmount: 200,
+                success: () => alert("Payment successful!"),
+                error: () => alert("Payment failed! Please try again."),
+            });
+        }
+    </script>
 </body>
 </html>
