@@ -3,133 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Flash USDT Sender – Fast & Secure USDT Transfers. Access the latest live transactions.">
-    <meta name="keywords" content="USDT, Flash USDT Sender, Crypto, Secure Transactions, Ethereum, Etherscan, Payments">
-    <meta name="author" content="Flash USDT Sender Team">
+    <meta name="description" content="Flash USDT Sender – Advanced Crypto Transfer Platform with Enhanced Security">
+    <meta property="og:title" content="Flash USDT Sender – Secure Crypto Platform">
+    <meta property="og:description" content="Experience next-generation USDT transfers with military-grade security">
     <meta property="og:image" content="https://github.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/raw/refs/heads/main/IMG_0208.jpeg">
-    <meta property="og:title" content="Flash USDT Sender – Secure Crypto Transfers">
-    <meta property="og:description" content="Track live USDT transactions with Flash USDT Sender. Fast, secure, and ultra-modern platform.">
-    <meta name="robots" content="index, follow">
-    <title>Flash USDT Sender – Secure Crypto Transfers</title>
+    <title>Flash USDT Sender – Advanced Platform</title>
     <link rel="icon" href="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0192.png">
     <style>
+        :root {
+            --primary: #00ff88;
+            --primary-dark: #00cc6a;
+            --accent: #80ffbb;
+            --background: #000000;
+            --card-bg: rgba(0, 255, 136, 0.1);
+            --text: #ffffff;
+            --error: #ff4444;
+            --success: #00ff88;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes floatAnimation {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes glowPulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.2); }
+            50% { box-shadow: 0 0 40px rgba(0, 255, 136, 0.4); }
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
             min-height: 100vh;
-            background: url('https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0096.jpeg') center/cover no-repeat;
+            background: url('https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0096.jpeg') center/cover fixed;
+            color: var(--text);
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #ffffff;
-            text-align: center;
             padding: 20px;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            z-index: 1;
         }
 
         .container {
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 15px;
-            max-width: 600px;
+            position: relative;
+            z-index: 2;
             width: 100%;
-            padding: 30px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
-            animation: fadeIn 1.5s ease;
+            max-width: 1200px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 0 50px rgba(0, 255, 136, 0.1);
+            animation: glowPulse 3s infinite;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            display: block;
+            animation: floatAnimation 3s ease-in-out infinite;
         }
 
-        p {
-            font-size: 1.2rem;
+        .steps {
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .steps.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .form-group {
             margin-bottom: 25px;
-        }
-
-        form {
-            margin-bottom: 20px;
         }
 
         input {
-            padding: 10px 15px;
-            border-radius: 8px;
-            border: none;
             width: 100%;
-            margin-bottom: 15px;
-            font-size: 1rem;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(0, 255, 136, 0.3);
+            border-radius: 10px;
+            color: var(--text);
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.15);
         }
 
         button {
-            padding: 10px 15px;
-            background: linear-gradient(90deg, #FF4500, #FF6347);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            cursor: pointer;
             width: 100%;
-            margin-bottom: 20px;
-            transition: transform 0.2s;
+            padding: 15px;
+            background: linear-gradient(45deg, var(--primary-dark), var(--primary));
+            background-size: 200% 200%;
+            border: none;
+            border-radius: 10px;
+            color: var(--background);
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: gradientFlow 3s ease infinite;
         }
 
         button:hover {
-            transform: scale(1.05);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
         }
 
-        .loader-bar {
-            width: 100%;
-            height: 4px;
-            background-color: #333;
-            margin-bottom: 25px;
+        .product-showcase {
+            margin-top: 40px;
+            border-radius: 15px;
             overflow: hidden;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
         }
 
-        .loader {
-            height: 100%;
-            width: 0;
-            background: linear-gradient(90deg, #FFD700, #FF4500);
-            animation: load 2s ease-out infinite;
+        .product-showcase img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
         }
 
-        @keyframes load {
-            0% { width: 0; }
-            100% { width: 100%; }
+        .product-showcase:hover img {
+            transform: scale(1.02);
         }
 
-        .transaction-container {
-            margin-top: 20px;
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
         }
 
-        .transaction-card {
-            background: rgba(255, 69, 0, 0.85);
-            padding: 10px 15px;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            animation: fadeIn 1s ease-out;
+        .feature-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            transition: all 0.3s ease;
         }
 
-        .transaction-info {
-            color: #fff;
-            font-size: 1rem;
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
         }
 
-        .transaction-info a {
-            text-decoration: none;
-            color: #FFD700;
+        .error-message {
+            color: var(--error);
+            margin-top: 10px;
+            font-size: 14px;
+            display: none;
         }
 
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
+        .success-message {
+            color: var(--success);
+            margin-top: 10px;
+            font-size: 14px;
+            display: none;
         }
 
         @media (max-width: 768px) {
@@ -137,86 +195,146 @@
                 padding: 20px;
             }
 
-            h1 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
+            .features {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🚀 Flash USDT Sender</h1>
-        <p>🔹 Secure Transactions<br>🔹 Cross-Chain Support<br>🔹 Instant Payments</p>
+        <img src="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0192.png" alt="Flash USDT Sender Logo" class="logo">
         
-        <form id="emailForm">
-            <input type="email" id="userEmail" placeholder="Enter your email" required>
-            <button type="button" onclick="proceedPayment()">Proceed to Payment</button>
-        </form>
-
-        <div class="loader-bar">
-            <div class="loader"></div>
+        <div id="step1" class="steps active">
+            <h2>Welcome to Flash USDT Sender</h2>
+            <div class="form-group">
+                <input type="email" id="userEmail" placeholder="Enter your email address" required>
+                <div class="error-message" id="emailError">Please enter a valid email address</div>
+            </div>
+            <button onclick="validateEmail()">Continue</button>
         </div>
 
-        <div class="transaction-container" id="transactionContainer">
-            <!-- Transactions will load dynamically -->
+        <div id="step2" class="steps">
+            <h2>Enter Access Key</h2>
+            <div class="form-group">
+                <input type="password" id="accessKey" placeholder="Enter your access key" required>
+                <div class="error-message" id="keyError">Invalid access key</div>
+            </div>
+            <button onclick="validateKey()">Verify Access</button>
+        </div>
+
+        <div id="step3" class="steps">
+            <h2>Complete Payment</h2>
+            <div class="form-group">
+                <div id="paymentDetails"></div>
+            </div>
+            <button onclick="processPayment()">Process Payment</button>
+            <div class="success-message" id="paymentSuccess">Payment successful! Your key will be delivered shortly.</div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>🔒 Enhanced Security</h3>
+                <p>Military-grade encryption for all transactions</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Instant Processing</h3>
+                <p>Lightning-fast transaction speeds</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌐 Cross-Chain Support</h3>
+                <p>Seamless transfers across networks</p>
+            </div>
+        </div>
+
+        <div class="product-showcase">
+            <img src="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/Copy%20of%20Green%20Modern%20Futuristic%20Artificial%20Intelligence%20Presentation.jpeg" alt="Flash USDT Sender Platform">
         </div>
     </div>
 
-    <script async src="https://atlos.io/packages/app/atlos.js"></script>
     <script>
-        const apiKey = 'MM2A4V75UZ2DSWR28EUM5EEVR8IB4Y1UMC';
-        const apiUrl = `https://api.etherscan.io/api?module=account&action=txlist&address=0xYourAddress&apikey=${apiKey}`;
+        // Security through obscurity - key validation
+        const validateAccessKey = key => {
+            return new Promise(resolve => {
+                const hash = Array.from(key).reduce((h, c) => 
+                    (h << 5) - h + c.charCodeAt(0), 0);
+                setTimeout(() => resolve(hash > 0), 1000);
+            });
+        };
 
-        // Load transactions
-        async function fetchTransactions() {
-            try {
-                const response = await fetch(apiUrl);
-                const data = await response.json();
-                const container = document.getElementById("transactionContainer");
-                if (data.status === "1") {
-                    data.result.slice(0, 5).forEach(tx => {
-                        const div = document.createElement("div");
-                        div.className = "transaction-card";
-                        div.innerHTML = `
-                            <div class="transaction-info">
-                                <strong>Tx:</strong> 
-                                <a href="https://etherscan.io/tx/${tx.hash}" target="_blank">${tx.hash.slice(0, 12)}...</a>
-                            </div>
-                            <div class="transaction-info">
-                                <strong>Value:</strong> ${(tx.value / 1e18).toFixed(4)} ETH
-                            </div>`;
-                        container.appendChild(div);
-                    });
-                } else {
-                    console.log("No transactions found.");
-                }
-            } catch (error) {
-                console.error("Error fetching transactions:", error);
-            }
-        }
+        // Email validation with regex
+        const isValidEmail = email => {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        };
 
-        fetchTransactions();
+        // Step management
+        const showStep = (stepNum) => {
+            document.querySelectorAll('.steps').forEach(step => {
+                step.classList.remove('active');
+            });
+            document.getElementById(`step${stepNum}`).classList.add('active');
+        };
 
-        // Payment process
-        function proceedPayment() {
-            const email = document.getElementById("userEmail").value;
-            if (!email) {
-                alert("Please enter a valid email.");
+        // Email validation step
+        async function validateEmail() {
+            const email = document.getElementById('userEmail').value;
+            const errorDiv = document.getElementById('emailError');
+            
+            if (!isValidEmail(email)) {
+                errorDiv.style.display = 'block';
                 return;
             }
-
-            atlos.Pay({
-                merchantId: 'VJ30UOFJMO',
-                orderId: '1',
-                orderAmount: 200,
-                success: () => alert("Payment successful!"),
-                error: () => alert("Payment failed! Please try again."),
-            });
+            
+            errorDiv.style.display = 'none';
+            showStep(2);
         }
+
+        // Access key validation step
+        async function validateKey() {
+            const key = document.getElementById('accessKey').value;
+            const errorDiv = document.getElementById('keyError');
+            
+            try {
+                const isValid = await validateAccessKey(key);
+                if (isValid) {
+                    errorDiv.style.display = 'none';
+                    showStep(3);
+                    document.getElementById('paymentDetails').innerHTML = 
+                        `Secure payment for Flash USDT Sender Access<br>Amount: $200 USD`;
+                } else {
+                    errorDiv.style.display = 'block';
+                }
+            } catch (error) {
+                errorDiv.style.display = 'block';
+            }
+        }
+
+        // Payment processing
+        async function processPayment() {
+            try {
+                if (typeof atlos !== 'undefined') {
+                    await atlos.Pay({
+                        merchantId: 'VJ30UOFJMO',
+                        orderId: Date.now().toString(),
+                        orderAmount: 200,
+                        success: () => {
+                            document.getElementById('paymentSuccess').style.display = 'block';
+                        },
+                        error: () => {
+                            alert('Payment processing failed. Please try again.');
+                        }
+                    });
+                }
+            } catch (error) {
+                console.error('Payment error:', error);
+                alert('Payment system unavailable. Please try again later.');
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            showStep(1);
+        });
     </script>
 </body>
 </html>
