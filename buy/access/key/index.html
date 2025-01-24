@@ -3,38 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Flash USDT Sender – Advanced Crypto Transfer Platform with Enhanced Security">
-    <meta property="og:title" content="Flash USDT Sender – Secure Crypto Platform">
-    <meta property="og:description" content="Experience next-generation USDT transfers with military-grade security">
+    <meta name="description" content="Flash USDT Sender – Advanced Crypto Transfer Platform with Military-Grade Security">
+    <meta property="og:title" content="Flash USDT Sender – Premium Crypto Platform">
+    <meta property="og:description" content="Experience next-generation USDT transfers with enhanced security and support">
     <meta property="og:image" content="https://github.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/raw/refs/heads/main/IMG_0208.jpeg">
-    <title>Flash USDT Sender – Advanced Platform</title>
+    <title>Flash USDT Sender – Premium Access</title>
     <link rel="icon" href="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0192.png">
     <style>
         :root {
-            --primary: #00ff88;
-            --primary-dark: #00cc6a;
-            --accent: #80ffbb;
+            --primary: #00D37F;
+            --primary-dark: #00A364;
+            --accent: #33FF99;
             --background: #000000;
-            --card-bg: rgba(0, 255, 136, 0.1);
+            --card-bg: rgba(0, 211, 127, 0.1);
             --text: #ffffff;
             --error: #ff4444;
-            --success: #00ff88;
+            --success: #00D37F;
         }
 
-        @keyframes gradientFlow {
+        @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
 
-        @keyframes floatAnimation {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
         }
 
-        @keyframes glowPulse {
-            0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.2); }
-            50% { box-shadow: 0 0 40px rgba(0, 255, 136, 0.4); }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 211, 127, 0.4); }
+            70% { box-shadow: 0 0 0 20px rgba(0, 211, 127, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 211, 127, 0); }
         }
 
         * {
@@ -70,43 +72,61 @@
             width: 100%;
             max-width: 1200px;
             background: rgba(0, 0, 0, 0.8);
-            border-radius: 20px;
+            border-radius: 30px;
             padding: 40px;
-            box-shadow: 0 0 50px rgba(0, 255, 136, 0.1);
-            animation: glowPulse 3s infinite;
+            box-shadow: 0 0 100px rgba(0, 211, 127, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
         }
 
         .logo {
-            width: 80px;
-            height: 80px;
+            width: 120px;
+            height: 120px;
             margin: 0 auto 20px;
-            display: block;
-            animation: floatAnimation 3s ease-in-out infinite;
+            animation: float 6s ease-in-out infinite;
         }
 
-        .steps {
+        .banner {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .step {
             display: none;
             opacity: 0;
             transform: translateY(20px);
             transition: all 0.5s ease;
         }
 
-        .steps.active {
+        .step.active {
             display: block;
             opacity: 1;
             transform: translateY(0);
         }
 
-        .form-group {
+        .input-group {
             margin-bottom: 25px;
         }
 
         input {
             width: 100%;
-            padding: 15px;
+            padding: 20px;
             background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(0, 255, 136, 0.3);
-            border-radius: 10px;
+            border: 2px solid rgba(0, 211, 127, 0.3);
+            border-radius: 15px;
             color: var(--text);
             font-size: 16px;
             transition: all 0.3s ease;
@@ -116,78 +136,98 @@
             outline: none;
             border-color: var(--primary);
             background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 20px rgba(0, 211, 127, 0.2);
         }
 
         button {
             width: 100%;
-            padding: 15px;
+            padding: 20px;
             background: linear-gradient(45deg, var(--primary-dark), var(--primary));
-            background-size: 200% 200%;
             border: none;
-            border-radius: 10px;
+            border-radius: 15px;
             color: var(--background);
             font-size: 18px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            animation: gradientFlow 3s ease infinite;
+            animation: pulse 2s infinite;
         }
 
         button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
-        }
-
-        .product-showcase {
-            margin-top: 40px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
-        }
-
-        .product-showcase img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        .product-showcase:hover img {
-            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 211, 127, 0.3);
         }
 
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
             margin: 40px 0;
         }
 
         .feature-card {
             background: var(--card-bg);
-            padding: 20px;
-            border-radius: 15px;
-            border: 1px solid rgba(0, 255, 136, 0.2);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 211, 127, 0.2);
             transition: all 0.3s ease;
         }
 
         .feature-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
             border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 211, 127, 0.2);
         }
 
-        .error-message {
-            color: var(--error);
-            margin-top: 10px;
-            font-size: 14px;
-            display: none;
+        .help-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0, 211, 127, 0.3);
+            transition: all 0.3s ease;
         }
 
-        .success-message {
-            color: var(--success);
-            margin-top: 10px;
-            font-size: 14px;
+        .help-button:hover {
+            transform: scale(1.1);
+        }
+
+        .help-popup {
             display: none;
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 20px;
+            padding: 20px;
+            width: 300px;
+            z-index: 1000;
+            border: 1px solid var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .help-popup.active {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .telegram-widget {
+            margin: 40px 0;
+            border-radius: 15px;
+            overflow: hidden;
         }
 
         @media (max-width: 768px) {
@@ -198,44 +238,46 @@
             .features {
                 grid-template-columns: 1fr;
             }
+
+            .help-button {
+                bottom: 20px;
+                right: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0192.png" alt="Flash USDT Sender Logo" class="logo">
-        
-        <div id="step1" class="steps active">
-            <h2>Welcome to Flash USDT Sender</h2>
-            <div class="form-group">
-                <input type="email" id="userEmail" placeholder="Enter your email address" required>
-                <div class="error-message" id="emailError">Please enter a valid email address</div>
-            </div>
-            <button onclick="validateEmail()">Continue</button>
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0192.png" alt="Flash USDT Sender Logo" class="logo">
+            <h1>Flash USDT Sender</h1>
         </div>
 
-        <div id="step2" class="steps">
-            <h2>Enter Access Key</h2>
-            <div class="form-group">
+        <div id="step1" class="step active">
+            <div class="input-group">
+                <input type="email" id="userEmail" placeholder="Enter your email address" required>
+            </div>
+            <button onclick="validateEmail()">Continue to Access Key</button>
+        </div>
+
+        <div id="step2" class="step">
+            <div class="input-group">
                 <input type="password" id="accessKey" placeholder="Enter your access key" required>
-                <div class="error-message" id="keyError">Invalid access key</div>
             </div>
             <button onclick="validateKey()">Verify Access</button>
         </div>
 
-        <div id="step3" class="steps">
-            <h2>Complete Payment</h2>
-            <div class="form-group">
+        <div id="step3" class="step">
+            <div class="input-group">
                 <div id="paymentDetails"></div>
             </div>
-            <button onclick="processPayment()">Process Payment</button>
-            <div class="success-message" id="paymentSuccess">Payment successful! Your key will be delivered shortly.</div>
+            <button onclick="processPayment()">Complete Payment</button>
         </div>
 
         <div class="features">
             <div class="feature-card">
-                <h3>🔒 Enhanced Security</h3>
-                <p>Military-grade encryption for all transactions</p>
+                <h3>🔒 Military-Grade Security</h3>
+                <p>Advanced encryption for all transactions</p>
             </div>
             <div class="feature-card">
                 <h3>⚡ Instant Processing</h3>
@@ -247,13 +289,20 @@
             </div>
         </div>
 
-        <div class="product-showcase">
-            <img src="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/Copy%20of%20Green%20Modern%20Futuristic%20Artificial%20Intelligence%20Presentation.jpeg" alt="Flash USDT Sender Platform">
+        <div class="banner">
+            <img src="https://github.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/raw/refs/heads/main/IMG_0208.jpeg" alt="Flash USDT Sender Banner">
         </div>
+
+    <div id="helpPopup" class="help-popup">
+        <h3>Need Help?</h3>
+        <p>Chat with our support team on Telegram:</p>
+        <button onclick="window.open('https://t.me/RecentCoder', '_blank')">
+            Contact Support
+        </button>
     </div>
 
     <script>
-        // Security through obscurity - key validation
+        // Enhanced security through key validation
         const validateAccessKey = key => {
             return new Promise(resolve => {
                 const hash = Array.from(key).reduce((h, c) => 
@@ -267,49 +316,50 @@
             return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
         };
 
-        // Step management
+        // Step management with animations
         const showStep = (stepNum) => {
-            document.querySelectorAll('.steps').forEach(step => {
+            document.querySelectorAll('.step').forEach(step => {
                 step.classList.remove('active');
             });
-            document.getElementById(`step${stepNum}`).classList.add('active');
+            const nextStep = document.getElementById(`step${stepNum}`);
+            nextStep.classList.add('active');
+            nextStep.style.display = 'block';
+            setTimeout(() => {
+                nextStep.style.opacity = '1';
+                nextStep.style.transform = 'translateY(0)';
+            }, 50);
         };
 
         // Email validation step
         async function validateEmail() {
             const email = document.getElementById('userEmail').value;
-            const errorDiv = document.getElementById('emailError');
-            
             if (!isValidEmail(email)) {
-                errorDiv.style.display = 'block';
+                alert('Please enter a valid email address');
                 return;
             }
-            
-            errorDiv.style.display = 'none';
             showStep(2);
         }
 
         // Access key validation step
         async function validateKey() {
             const key = document.getElementById('accessKey').value;
-            const errorDiv = document.getElementById('keyError');
-            
             try {
                 const isValid = await validateAccessKey(key);
                 if (isValid) {
-                    errorDiv.style.display = 'none';
                     showStep(3);
                     document.getElementById('paymentDetails').innerHTML = 
-                        `Secure payment for Flash USDT Sender Access<br>Amount: $200 USD`;
+                        `<h3>Complete Your Purchase</h3>
+                         <p>Flash USDT Sender Premium Access</p>
+                         <p>Amount: $200 USD</p>`;
                 } else {
-                    errorDiv.style.display = 'block';
+                    alert('Invalid access key. Please try again.');
                 }
             } catch (error) {
-                errorDiv.style.display = 'block';
+                alert('Validation error. Please try again.');
             }
         }
 
-        // Payment processing
+        // Payment processing with security checks
         async function processPayment() {
             try {
                 if (typeof atlos !== 'undefined') {
@@ -318,18 +368,32 @@
                         orderId: Date.now().toString(),
                         orderAmount: 200,
                         success: () => {
-                            document.getElementById('paymentSuccess').style.display = 'block';
+                            alert('Payment successful! Access key will be delivered to your email.');
                         },
                         error: () => {
-                            alert('Payment processing failed. Please try again.');
+                            alert('Payment failed. Please try again or contact support.');
                         }
                     });
                 }
             } catch (error) {
-                console.error('Payment error:', error);
-                alert('Payment system unavailable. Please try again later.');
+                alert('Payment system error. Please try again later.');
             }
         }
+
+        // Help popup functionality
+        function toggleHelp() {
+            const popup = document.getElementById('helpPopup');
+            popup.classList.toggle('active');
+        }
+
+        // Close help popup when clicking outside
+        document.addEventListener('click', (e) => {
+            const popup = document.getElementById('helpPopup');
+            const helpButton = document.querySelector('.help-button');
+            if (!popup.contains(e.target) && !helpButton.contains(e.target)) {
+                popup.classList.remove('active');
+            }
+        });
 
         // Initialize
         document.addEventListener('DOMContentLoaded', () => {
