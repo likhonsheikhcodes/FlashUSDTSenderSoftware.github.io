@@ -13,6 +13,7 @@
     <meta name="robots" content="index, follow">
     <title>Flash USDT Sender – Fast & Secure Transfers</title>
     <link rel="icon" href="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/IMG_0192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -81,6 +82,7 @@
             justify-content: space-between;
             align-items: center;
             animation: fadeIn 1s ease-out;
+            transition: background-color 0.3s ease;
         }
         .transaction-card:hover {
             cursor: pointer;
@@ -116,6 +118,29 @@
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
+        .glossary {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .glossary-item {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .glossary-item:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .glossary-item h3 {
+            margin-bottom: 5px;
+        }
+        .glossary-item p {
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
@@ -140,6 +165,21 @@
         <img src="https://github.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/raw/refs/heads/main/IMG_0208.jpeg" alt="Flash USDT Sender Banner" class="seo-banner">
 
         <img src="https://raw.githubusercontent.com/FlashUSDTSenderSoftware/FlashUSDTSenderSoftware.github.io/refs/heads/main/Copy%20of%20Green%20Modern%20Futuristic%20Artificial%20Intelligence%20Presentation.jpeg" alt="Flash USDT Sender Product" class="product-image">
+
+        <div class="glossary">
+            <div class="glossary-item">
+                <h3>Instant Transfers</h3>
+                <p>Experience lightning-fast USDT transfers with our cutting-edge technology.</p>
+            </div>
+            <div class="glossary-item">
+                <h3>Low Fees</h3>
+                <p>Enjoy minimal transaction fees, making your transfers cost-effective.</p>
+            </div>
+            <div class="glossary-item">
+                <h3>Cross-Chain Support</h3>
+                <p>Seamlessly transfer USDT across different blockchains with ease.</p>
+            </div>
+        </div>
 
         <script>
             const apiKey = 'MM2A4V75UZ2DSWR28EUM5EEVR8IB4Y1UMC'; // Your Etherscan API Key
@@ -168,7 +208,7 @@
                         transactionCard.classList.add('transaction-card');
                         transactionCard.innerHTML = `
                             <div class="transaction-info">
-                                <span>TxID:</span> 
+                                <span>TxID:</span>
                                 <a href="https://etherscan.io/tx/${transaction.hash}" class="txid" target="_blank">${transaction.hash}</a>
                             </div>
                             <div class="transaction-info">
