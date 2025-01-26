@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Flash USDT Main Section -->
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Flash USDT Features -->
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/features</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/security</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/speed</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Flash USDT Guides -->
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/guides</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/guides/get-started</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/guides/trading</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/guides/selling</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Flash USDT Tools -->
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/tools</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/tools/exchange</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/tools/converter</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/tools/wallet</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Flash USDT Blog -->
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/blog</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/blog/benefits</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/blog/tips</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/blog/trends</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/blog/case-studies</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Flash USDT FAQs -->
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/faqs</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/faqs/security</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/faqs/fees</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/faqs/support</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Flash USDT Contact -->
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/contact</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/contact/support</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://likhon-sheikh.vercel.app/flash-usdt/contact/collaborations</loc>
+    <lastmod>2025-01-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
