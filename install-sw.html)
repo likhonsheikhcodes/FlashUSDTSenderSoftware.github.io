@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Installing Service Worker - Flash USDT</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+    }
+    .status {
+      text-align: center;
+      padding: 20px;
+    }
+    .success {
+      color: #00ffa2;
+    }
+    .error {
+      color: #ff4444;
+    }
+  </style>
+  <script>
+    // Register service worker
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
+          .then(registration => {
+            document.getElementById('status').textContent = 'Service Worker installed successfully!';
+            document.getElementById('status').className = 'status success';
+            
+            // Check for updates
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing;
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed') {
+                  if (navigator.serviceWorker.controller) {
+                    document.getElementById('update').textContent = 'New version available! Please refresh.';
+                  }
+                }
+              });
+            });
+          })
+          .catch(error => {
+            document.getElementById('status').textContent = 'Service Worker installation failed: ' + error;
+            document.getElementById('status').className = 'status error';
+            console.error('Service Worker registration failed:', error);
+          });
+      });
+
+      // Handle updates
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!refreshing) {
+          refreshing = true;
+          window.location.reload();
+        }
+      });
+    } else {
+      document.getElementById('status').textContent = 'Service Workers are not supported in this browser.';
+      document.getElementById('status').className = 'status error';
+    }
+  </script>
+</head>
+<body>
+  <div id="status" class="status">Installing Service Worker...</div>
+  <div id="update" class="status"></div>
+</body>
+</html>
