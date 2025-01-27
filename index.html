@@ -14,7 +14,12 @@
   <meta property="og:image" content="https://flashusdtconverter.vercel.app/images/og-image.jpg">
   <meta property="og:url" content="https://flashusdtconverter.vercel.app">
   <meta name="twitter:card" content="summary_large_image">
-  
+  <meta name="twitter:site" content="@flashusdt">
+  <meta name="twitter:creator" content="@flashusdt">
+  <meta name="twitter:title" content="Flash USDT Converter - Enterprise Crypto Solutions">
+  <meta name="twitter:description" content="Enterprise-grade cryptocurrency conversion platform. Instant USDT transactions with military-grade security.">
+  <meta name="twitter:image" content="https://flashusdtconverter.vercel.app/images/og-image.jpg">
+
   <title>Flash USDT Converter | Enterprise-Grade Crypto Solutions</title>
 
   <!-- Preload Critical Assets -->
@@ -22,24 +27,25 @@
   <link rel="preload" href="/css/critical.css" as="style">
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
   <link rel="preconnect" href="https://cdn.ampproject.org" crossorigin>
-  
+
   <!-- PWA Support -->
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png">
-  
+
   <!-- AMP Requirements -->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BPNLZEHSZW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-BPNLZEHSZW');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPNLZEHSZW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BPNLZEHSZW');
+  </script>
+
   <!-- Enhanced Structured Data -->
   <script type="application/ld+json">
   {
@@ -114,21 +120,21 @@
       --background-dark: #121212;
       --text-light: #e0e0e0;
     }
-    
+
     /* Modern CSS Reset */
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    
+
     /* Performance Optimizations */
     @media (prefers-reduced-motion: no-preference) {
       html {
         scroll-behavior: smooth;
       }
     }
-    
+
     /* Font Display Strategy */
     @font-face {
       font-family: 'Inter var';
@@ -136,7 +142,7 @@
       font-display: swap;
       src: url('/fonts/inter-var.woff2') format('woff2');
     }
-    
+
     body {
       font-family: 'Inter var', system-ui, -apple-system, sans-serif;
       background-color: var(--background-dark);
@@ -145,19 +151,19 @@
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
     }
-    
+
     /* Content-visibility optimization */
     .deferred {
       content-visibility: auto;
       contain-intrinsic-size: 0 500px;
     }
-    
+
     header {
       background-color: #1e1e1e;
       padding: clamp(1rem, 5vw, 2rem);
       border-bottom: 3px solid var(--primary-color);
     }
-    
+
     /* Responsive Typography */
     h1 {
       font-size: clamp(2rem, 5vw, 3rem);
@@ -165,7 +171,7 @@
       line-height: 1.2;
       margin-bottom: 0.5em;
     }
-    
+
     /* Modern Navigation */
     .nav-container {
       background: #222222;
@@ -174,7 +180,7 @@
       z-index: 1000;
       backdrop-filter: blur(10px);
     }
-    
+
     nav {
       max-width: 1200px;
       margin: 0 auto;
@@ -183,7 +189,7 @@
       justify-content: space-between;
       align-items: center;
     }
-    
+
     nav a {
       color: var(--text-light);
       text-decoration: none;
@@ -191,12 +197,12 @@
       border-radius: 4px;
       transition: background-color 0.3s ease;
     }
-    
+
     nav a:hover {
       background-color: rgba(255, 255, 255, 0.1);
       color: var(--primary-color);
     }
-    
+
     /* Modern Grid Layout */
     .features-grid {
       display: grid;
@@ -206,7 +212,7 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-    
+
     /* Card Design */
     .feature-card {
       background: #1e1e1e;
@@ -215,11 +221,11 @@
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
     }
-    
+
     .feature-card:hover {
       transform: translateY(-5px);
     }
-    
+
     /* Modern Button Styles */
     .cta-button {
       display: inline-block;
@@ -231,12 +237,12 @@
       font-weight: 600;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    
+
     .cta-button:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0, 255, 162, 0.2);
     }
-    
+
     /* Footer Optimization */
     footer {
       background-color: #1e1e1e;
@@ -244,26 +250,26 @@
       margin-top: 4rem;
       text-align: center;
     }
-    
+
     /* Responsive Design */
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
         gap: 1rem;
       }
-      
+
       .features-grid {
         grid-template-columns: 1fr;
       }
     }
-    
+
     /* Print Styles */
     @media print {
       body {
         background: white;
         color: black;
       }
-      
+
       nav, .cta-button {
         display: none;
       }
